@@ -12,18 +12,18 @@ const StrategySection = () => {
     ];
 
     return (
-        <section id="strategy" className="py-24 md:py-32 bg-[var(--paper2)]">
+        <section id="strategy" className="py-16 md:py-32 bg-[var(--paper2)]">
             <div className="section-wrap">
                 <motion.div
-                    className="mb-16"
+                    className="mb-12 md:mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
                     <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">05</span>
-                    <div className="w-10 h-0.5 bg-[var(--gold)] mb-7" />
-                    <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight mb-4">
+                    <div className="w-10 h-0.5 bg-[var(--gold)] mb-6 md:mb-7" />
+                    <h2 className="font-serif text-[1.5rem] md:text-[2rem] lg:text-[3rem] font-black leading-[1.1] tracking-tight mb-4">
                         Four principles that<br />separate us from <em>the field</em>.
                     </h2>
                     <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] leading-relaxed">
@@ -35,19 +35,19 @@ const StrategySection = () => {
                     {points.map((point, idx) => (
                         <motion.div
                             key={idx}
-                            className="grid md:grid-cols-[100px_1fr] gap-12 py-12 md:py-16 border-t border-[var(--rule)] last:border-b"
+                            className="grid md:grid-cols-[100px_1fr] gap-4 md:gap-12 py-8 md:py-16 border-t border-[var(--rule)] last:border-b"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: idx * 0.1 }}
                         >
-                            <div className="font-serif text-5xl md:text-6xl font-black text-[var(--paper)] leading-none select-none">
+                            <div className="font-serif text-4xl md:text-6xl font-black text-[var(--paper)] leading-none select-none">
                                 {point.num}
                             </div>
                             <div className="max-w-[620px]">
                                 <div className="font-mono text-[9px] text-[var(--gold)] tracking-[0.2em] uppercase mb-2">{point.tag}</div>
-                                <div className="font-serif font-bold text-xl md:text-2xl text-[var(--ink)] mb-3 leading-tight">{point.title}</div>
-                                <div className="text-[15px] text-[var(--muted)] leading-loose">{point.body}</div>
+                                <div className="font-serif font-bold text-lg md:text-2xl text-[var(--ink)] mb-3 leading-tight">{point.title}</div>
+                                <div className="text-[14px] md:text-[15px] text-[var(--muted)] leading-relaxed">{point.body}</div>
                             </div>
                         </motion.div>
                     ))}
