@@ -24,10 +24,10 @@ const MarketSection = () => {
                     <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">01</span>
                     <div className="w-10 h-0.5 bg-[var(--gold)] mb-7" />
                     <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight mb-4">
-                        A $500 billion market<br />that rewards <em>execution</em>.
+                        This is a partner track,<br />not a <em>freelance course</em>.
                     </h2>
                     <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] leading-relaxed">
-                        Freelance platforms are not saturated — they are under-optimised. The market processes billions in contracts, and the overwhelming majority of participants are competing on price, not strategy.
+                        Most accounting professionals never control the client relationship. They support someone else's portfolio, deliver work behind the scenes, and bill hourly.
                     </p>
                 </motion.div>
 
@@ -40,14 +40,31 @@ const MarketSection = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <p className="text-[15px] text-[#3a3830] leading-loose">
-                            The global freelance economy crossed $500 billion in 2024, driven by a fundamental shift in how companies hire. Businesses of every size — from funded startups to publicly listed firms — now routinely source specialist talent through curated networks rather than building in-house teams.
+                            Inside large accounting firms, partners operate differently. They originate relationships, grow portfolios, and expand contract value. Delivery happens through structured internal teams.
                         </p>
                         <p className="text-[15px] text-[#3a3830] leading-loose">
-                            The opportunity is not in being the cheapest option in a crowded field. It is in being the most professional, the most responsive, and the most clearly scoped. That is an operational advantage — one that can be engineered from day one.
+                            This program follows the same model. You operate as the relationship owner. Our team supports proposal writing, positioning, bidding strategy, and delivery execution behind you.
                         </p>
                         <p className="text-[15px] text-[#3a3830] leading-loose font-medium">
-                            ScaleOps builds that advantage: a credentialed, reviewed, elite presence, managed with discipline and a clear client acquisition playbook.
+                            Veridion Finance builds that advantage: you build relationship ownership and portfolio association, while we handle the operational weight of delivery.
                         </p>
+
+                        <div className="pt-8 border-t border-[var(--rule)]">
+                            <div className="font-mono text-[10px] text-[var(--gold)] uppercase tracking-widest mb-6">Partner Identity</div>
+                            <div className="grid grid-cols-2 gap-4">
+                                {[
+                                    { label: 'Not Freelancers', sub: 'Relationship Owners' },
+                                    { label: 'Not Trainees', sub: 'Experienced Operators' },
+                                    { label: 'Not Employees', sub: 'Scaled Partners' },
+                                    { label: 'Build Leverage', sub: 'Recurring Contracts' },
+                                ].map(item => (
+                                    <div key={item.label}>
+                                        <div className="text-[14px] font-bold text-[var(--ink)]">{item.label}</div>
+                                        <div className="text-[11px] text-[var(--muted)] uppercase tracking-wider">{item.sub}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </motion.div>
 
                     <motion.div

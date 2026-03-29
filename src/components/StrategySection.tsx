@@ -21,7 +21,7 @@ const StrategySection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">04</span>
+                    <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">05</span>
                     <div className="w-10 h-0.5 bg-[var(--gold)] mb-7" />
                     <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight mb-4">
                         Four principles that<br />separate us from <em>the field</em>.

@@ -6,11 +6,11 @@ import WaterfallChart from './WaterfallChart';
 
 const ModelSection = () => {
     const wfData = [
-        { name: 'Total investment', val: '$10,000', pct: 100, color: '#1a3a2a' },
-        { name: 'Connects & Outreach (6 months)', val: '– $500', pct: 5, color: '#8b2020', neg: true },
-        { name: 'Commission buffer', val: '– $1,500', pct: 15, color: '#8b2020', neg: true },
-        { name: 'Operating reserve', val: '– $500', pct: 5, color: '#8b2020', neg: true },
-        { name: 'Net deployable capital', val: '$7,500', pct: 75, color: '#b8860b' },
+        { name: 'Onboarding Fee', val: '£2,000', pct: 100, color: '#1a3a2a' },
+        { name: 'Profile Prep', val: 'Included', pct: 20, color: '#b8860b' },
+        { name: 'CRM Access', val: 'Included', pct: 20, color: '#b8860b' },
+        { name: 'Sales Support', val: 'Included', pct: 30, color: '#b8860b' },
+        { name: 'Delivery Infrastructure', val: 'Included', pct: 30, color: '#b8860b' },
     ];
 
     return (
@@ -26,10 +26,10 @@ const ModelSection = () => {
                     <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">02</span>
                     <div className="w-10 h-0.5 bg-[var(--gold)] mb-7" />
                     <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight mb-4">
-                        How $10,000 becomes<br />a <em>working machine</em>.
+                        What you build in<br />a <em>9-month horizon</em>.
                     </h2>
                     <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] leading-relaxed">
-                        Capital is not just spent — it is strategically deployed. Every dollar has a specific purpose, a deployment timeline, and an expected return profile.
+                        The partner track is built on a clear timeline of asset creation. You don't just "freelance" — you build a portfolio of recurring contract value.
                     </p>
                 </motion.div>
 
@@ -51,11 +51,13 @@ const ModelSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
+                        <h3 className="font-serif text-xl font-bold">Month 1–3: Positioning</h3>
                         <p className="text-[15px] text-[#3a3830] leading-loose">
-                            Roughly $2,500 is absorbed by operational costs in the first six months — platform fees, bidding credits, and a working reserve. This leaves $7,500 as net deployable capital — the runway that funds client acquisition before revenue becomes self-sustaining.
+                            Platform authority and credibility positioning. Internal ecosystem projects establish your initial billing signals and client feedback, allowing faster access to external SME contracts.
                         </p>
+                        <h3 className="font-serif text-xl font-bold">Month 3–6: Expansion</h3>
                         <p className="text-[15px] text-[#3a3830] leading-loose">
-                            Our model rewards efficiency: by targeting fewer, higher-value clients, we minimize platform overhead and maximize the lifetime value of every contract won.
+                            Multi-platform acquisition expansion. We activate additional channels (Freelancer.com, Guru, PeoplePerHour) to increase deal flow and reduce platform dependency.
                         </p>
                     </motion.div>
 
@@ -66,11 +68,12 @@ const ModelSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.3 }}
                     >
+                        <h3 className="font-serif text-xl font-bold">Month 6–9: Growth</h3>
                         <p className="text-[15px] text-[#3a3830] leading-loose">
-                            The breakeven point — the monthly revenue required to cover all costs and begin returning capital — sits between $3,500 and $5,000. Based on target client profiles, this is achievable with just 2-3 anchor clients.
+                            Direct SME contract portfolio growth. Outbound infrastructure supports access to high-ticket mandates across the UK, US, Australia, and Middle East.
                         </p>
                         <p className="text-[15px] text-[#3a3830] leading-loose font-medium">
-                            Once breakeven is sustained for 90 consecutive days, the model is considered validated. From that point, every additional client represents pure compounding growth.
+                            Target outcome: Up to £100,000 in contracts associated with you. Participant success is contractually supported through structured milestone-gated support.
                         </p>
                     </motion.div>
                 </div>

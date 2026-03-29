@@ -7,10 +7,9 @@ import GrowthChart from './GrowthChart';
 
 const GrowthArcSection = () => {
     const steps = [
-        { phase: 'Months 1 – 3', title: 'Foundation & First Wins', body: 'Profile built, proposal scripts live, bidding active. First 2–3 smaller contracts closed — not for the revenue, but for the reviews. Top status established early.', pill: '$2K – $4K total billed' },
-        { phase: 'Months 4 – 6', title: 'First Retainer Locked', body: 'Elite status achieved. First ongoing monthly retainer secured — ideally $3,000–$5,000 per month. Revenue begins covering operating costs. Investment drawdown slows.', pill: '$3K – $5K / month' },
-        { phase: 'Months 7 – 12', title: 'Revenue Compounding', body: 'Three to four active retainer clients. Referrals begin. Platform commissions drop as billing history grows. Investment fully recouped by end of this phase.', pill: '$8K – $12K / month' },
-        { phase: 'Months 12 – 18', title: 'The Agency Pivot', body: '$100K total billed unlocks ultimate platform status. Direct outreach to companies begins. Platform dependency drops. Contracts become the primary revenue vehicle.', pill: '$100K milestone' },
+        { phase: 'Phase 1: Authority', title: 'Authority Creation (Month 1–3)', body: 'Profile positioning, service packaging, and proposal frameworks. Internal ecosystem projects establish elite credibility signals immediately.', pill: 'Target: £10K/mo CV' },
+        { phase: 'Phase 2: Expansion', title: 'Multi-Platform Expansion (Month 3–6)', body: 'Activation of Freelancer.com, Guru, and PeoplePerHour. Objective: increase deal flow, reduce platform dependency, and expand visibility.', pill: 'Target: Diversification' },
+        { phase: 'Phase 3: Direct', title: 'Direct SME Contracts (Month 6–9)', body: 'Outbound infrastructure activated for UK, US, AU, and ME markets. High-ticket retainers targeted through established authority.', pill: 'Target: £100K Portfolio' },
     ];
 
     return (

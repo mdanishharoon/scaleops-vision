@@ -16,27 +16,27 @@ const AskSection = () => {
                 >
                     <div className="font-mono text-[10px] text-[var(--gold-light)]/75 tracking-[0.22em] uppercase mb-10 flex items-center justify-center gap-4">
                         <span className="w-7 h-px bg-[var(--gold-light)]/40" />
-                        The ask
+                        Next intake open
                         <span className="w-7 h-px bg-[var(--gold-light)]/40" />
                     </div>
 
                     <h2 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-black leading-none tracking-tighter mb-10">
-                        $10,000.<br />One decision.<br /><em className="italic text-[var(--gold-light)] not-italic">18 months.</em>
+                        Apply for the<br />Partner Track.<br /><em className="italic text-[var(--gold-light)] not-italic underline decoration-[var(--gold-light)]/20 underline-offset-8">Intake 04</em>
                     </h2>
 
-                    <p className="text-base md:text-lg text-[#faf8f3]/50 max-w-[460px] mx-auto leading-relaxed mb-14">
-                        One-time capital. Clear return structure. No equity. No ambiguity. This is an execution play — built by those with the playbook to scale.
+                    <p className="text-base md:text-lg text-[#faf8f3]/50 max-w-[480px] mx-auto leading-relaxed mb-14">
+                        We are recruiting operators, not observers. Participation requires a £2,000 commitment and 1–4 hours of daily relationship management.
                     </p>
 
                     <a
-                        href="mailto:invest@scaleops.io"
+                        href="mailto:partners@veridionfinance.com"
                         className="inline-flex items-center gap-3 border border-[var(--gold-light)]/55 text-[var(--gold-light)] font-mono text-[11px] tracking-[0.15em] uppercase py-4 px-10 hover:bg-[var(--gold)] hover:text-[var(--ink)] hover:border-[var(--gold)] transition-all duration-300"
                     >
-                        Let's talk <ArrowRight size={14} />
+                        Start Application <ArrowRight size={14} />
                     </a>
 
                     <p className="font-mono text-[9px] text-[#faf8f3]/20 tracking-wider mt-12">
-                        Confidential memorandum · Not a public offering · Figures are forward-looking projections
+                        Applications reviewed before onboarding · Minimum commitment £2,000 · Confidential rollout
                     </p>
                 </motion.div>
             </div>

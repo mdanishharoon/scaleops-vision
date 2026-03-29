@@ -5,10 +5,10 @@ import { motion } from 'motion/react';
 
 const RiskSection = () => {
     const risks = [
-        { num: '01', title: 'Slow early traction', body: "The first 60–90 days are the hardest. The account has no history. Conversion rates will be low initially.", resolve: "$7,500 in deployable capital provides 6+ months of runway with zero revenue. The timeline can flex by 60 days with no impact on capital." },
-        { num: '02', title: 'Platform fee erosion', body: "Fees are higher on the first $10K billed per client. On smaller early contracts, this is a significant margin hit.", resolve: "The strategy deliberately targets high-value clients to cross the $10K threshold faster — reducing effective rates permanently." },
+        { num: '01', title: 'Slow early traction', body: "The first 60–90 days are the hardest. The account has no history. Conversion rates will be low initially.", resolve: "The £2,000 commitment supports the launch phase. The timeline can flex by 60 days with no impact on the long-term portfolio target." },
+        { num: '02', title: 'Platform fee erosion', body: "Fees are higher on the first £10K billed per client. On smaller early contracts, this is a significant margin hit.", resolve: "The strategy deliberately targets high-value clients to cross the £10K threshold faster — reducing effective rates permanently." },
         { num: '03', title: 'Mid-stage client churn', body: "Losing a major retainer at month 7 or 8 would impact the trajectory — though not the overall plan.", resolve: "By month 6, the goal is 3–4 active retainers. Losing one reduces revenue by 25%, not 100%. The replacement pipeline is always running." },
-        { num: '04', title: 'Platform policy shifts', body: "Networks can change terms or restrict bidding. This is a real risk and should not be minimized.", resolve: "Full compliance from day one. Relationships move Progressively direct. By month 9, the majority of revenue exists independently of any single platform." },
+        { num: '04', title: 'Platform policy shifts', body: "Networks can change terms or restrict bidding. This is a real risk and should not be minimized.", resolve: "Full compliance from day one. Relationships move progressively direct. By month 9, the majority of revenue exists independently of any single platform." },
     ];
 
     return (
@@ -21,7 +21,7 @@ const RiskSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">05</span>
+                    <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">07</span>
                     <div className="w-10 h-0.5 bg-[var(--gold)] mb-7" />
                     <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight mb-4">
                         We've stress-tested<br />the <em>uncomfortable</em> scenarios.

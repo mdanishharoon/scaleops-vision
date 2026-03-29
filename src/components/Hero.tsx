@@ -5,55 +5,99 @@ import { motion } from 'motion/react';
 
 const Hero = () => {
     return (
-        <section id="hero" className="min-h-screen flex flex-col justify-end relative overflow-hidden bg-[var(--ink)]">
-            {/* Texture Layer */}
-            <div className="absolute inset-0 z-0 opacity-20 pointer-events-none"
-                style={{
-                    backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.1) 39px, rgba(255,255,255,0.1) 40px), 
-                               repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.1) 39px, rgba(255,255,255,0.1) 40px)`
-                }}
-            />
+        <section id="hero" className="min-h-screen flex flex-col justify-end relative overflow-hidden bg-[#0c0a06]">
+            <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(212,160,23,0.15)_0%,transparent_50%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(26,58,42,0.2)_0%,transparent_50%)]" />
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+                    style={{
+                        backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(255,255,255,0.4) 49px, rgba(255,255,255,0.4) 50px), 
+                                   repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(255,255,255,0.4) 49px, rgba(255,255,255,0.4) 50px)`
+                    }}
+                />
+            </div>
+
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-20 pointer-events-none">
+                <svg viewBox="0 0 200 200" className="w-full h-full">
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(212,160,23,0.3)" strokeWidth="0.5" strokeDasharray="4 6" />
+                    <circle cx="100" cy="100" r="120" fill="none" stroke="rgba(212,160,23,0.15)" strokeWidth="0.3" strokeDasharray="2 8" />
+                    <circle cx="100" cy="100" r="160" fill="none" stroke="rgba(212,160,23,0.08)" strokeWidth="0.2" strokeDasharray="1 12" />
+                </svg>
+            </div>
 
             <div className="relative z-10 w-full max-w-[900px] mx-auto px-6 md:px-12 pb-20 pt-40 text-[#faf8f3]">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <div className="font-mono text-[10px] text-[var(--gold-light)]/85 tracking-[0.25em] uppercase mb-10 flex items-center gap-4">
-                        <span className="w-8 h-px bg-[var(--gold-light)]/60" />
-                        Private Investment Memorandum · 2025
-                    </div>
+                    <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.1 }}
+                        className="font-mono text-[10px] text-[var(--gold-light)] tracking-[0.3em] uppercase mb-12 flex items-center gap-5"
+                    >
+                        <span className="w-12 h-px bg-gradient-to-r from-[var(--gold-light)]/0 to-[var(--gold-light)]/60" />
+                        Veridion Finance Partner Track · 2025
+                    </motion.div>
 
-                    <h1 className="font-serif text-[clamp(3rem,7vw,6.5rem)] font-black leading-[0.95] tracking-tight mb-10">
-                        One account.<br />
-                        One strategy.<br />
-                        <em className="italic text-[var(--gold-light)] not-italic serif-italic">One outcome.</em>
-                    </h1>
+                    <motion.h1 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="font-serif text-[clamp(2.75rem,6.5vw,5.25rem)] font-black leading-[1.02] tracking-tight mb-10"
+                    >
+                        Build <span className="text-[var(--gold-light)]">£100K</span> in contract value within 9 months — without doing delivery yourself.
+                    </motion.h1>
 
-                    <p className="text-lg md:text-xl font-light text-[#faf8f3]/60 max-w-[560px] leading-relaxed mb-16">
-                        A structured, 18-month plan to build a top-rated presence — and convert it into a self-sustaining agency. Starting capital: $10,000. No equity. No ambiguity.
-                    </p>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.35 }}
+                        className="text-lg md:text-xl font-light text-[#faf8f3]/70 max-w-[620px] leading-relaxed mb-16"
+                    >
+                        Structured partner track for finance professionals. UK, US, Australia, Middle East.
+                    </motion.p>
 
-                    <div className="flex flex-wrap items-center gap-y-8 gap-x-12 pt-8 border-t border-white/10">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.5 }}
+                        className="flex flex-wrap items-center gap-y-8 gap-x-12 pt-10 border-t border-white/[0.08]"
+                    >
                         {[
-                            { label: 'Investment', val: '$10,000' },
-                            { label: 'Horizon', val: '18 months' },
-                            { label: 'Structure', val: 'Revenue share' },
-                            { label: 'Target at scale', val: '$10K+ / month' },
+                            { label: 'Commitment', val: '£2,000' },
+                            { label: 'Time Required', val: '1–4 hours / day' },
+                            { label: 'Structure', val: 'Partner Track' },
+                            { label: 'Target Portfolio', val: '£100K / 9 months' },
                         ].map((item, idx) => (
                             <React.Fragment key={item.label}>
-                                <div>
-                                    <div className="text-[11px] text-[#faf8f3]/40 tracking-widest uppercase mb-1">{item.label}</div>
-                                    <div className="font-mono text-sm text-[#faf8f3]/70">{item.val}</div>
+                                <div className="group">
+                                    <div className="text-[10px] text-[#faf8f3]/35 tracking-[0.2em] uppercase mb-2 transition-colors duration-300 group-hover:text-[#faf8f3]/50">{item.label}</div>
+                                    <div className="font-mono text-base text-[#faf8f3]/80 font-medium">{item.val}</div>
                                 </div>
-                                {idx < 3 && <div className="hidden sm:block w-px h-7 bg-white/10" />}
+                                {idx < 3 && <div className="hidden sm:block w-px h-8 bg-white/[0.06]" />}
                             </React.Fragment>
                         ))}
-                    </div>
+                    </motion.div>
                 </motion.div>
             </div>
+
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.8 }}
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+            >
+                <span className="text-[9px] tracking-[0.25em] uppercase text-[#faf8f3]/30">Scroll</span>
+                <div className="w-px h-8 bg-gradient-to-b from-[var(--gold-light)]/40 to-transparent" />
+            </motion.div>
         </section>
     );
 };

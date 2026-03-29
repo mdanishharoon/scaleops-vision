@@ -2,11 +2,15 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ChapterMarker from "@/components/ChapterMarker";
 import MarketSection from "@/components/MarketSection";
+import ComparisonTable from "@/components/ComparisonTable";
 import ModelSection from "@/components/ModelSection";
 import GrowthArcSection from "@/components/GrowthArcSection";
+import CRMSection from "@/components/CRMSection";
 import StrategySection from "@/components/StrategySection";
+import BusinessLabSection from "@/components/BusinessLabSection";
 import RiskSection from "@/components/RiskSection";
 import ReturnSection from "@/components/ReturnSection";
+import FAQSection from "@/components/FAQSection";
 import AskSection from "@/components/AskSection";
 import Footer from "@/components/Footer";
 
@@ -18,34 +22,42 @@ export default function Home() {
 
       <div className="pull-stripe">
         <p className="pull-quote">
-          Most freelancers treat platforms like a job board. We treat them like a sales funnel.
+          Most professionals support someone else&apos;s portfolio. Partners originate them.
         </p>
       </div>
 
-      <ChapterMarker chapter="Chapter I — The Market" title="Global freelance economy" />
+      <ChapterMarker chapter="Chapter I — The Position" title="Partner Track vs Freelancing" />
       <MarketSection />
+      <ComparisonTable />
 
-      <ChapterMarker chapter="Chapter II — The Model" title="Where the money goes" />
+      <ChapterMarker chapter="Chapter II — The Build" title="9-Month Growth Horizon" />
       <ModelSection />
 
-      <ChapterMarker chapter="Chapter III — The Growth Arc" title="18-month roadmap" />
+      <ChapterMarker chapter="Chapter III — The Roadmap" title="Phase 1, 2, and 3" />
       <GrowthArcSection />
 
       <div className="pull-stripe bg-[#f3ede0]">
         <p className="pull-quote !text-[var(--ink)]">
-          At $100K billed, the relationship inverts. We stop chasing clients — and start choosing them.
+          At £100K billed, the model matures. We move from acquisition to relationship leverage.
         </p>
       </div>
 
-      <ChapterMarker chapter="Chapter IV — The Strategy" title="Operational edge" />
+      <ChapterMarker chapter="Chapter IV — The Systems" title="Internal CRM Infrastructure" />
+      <CRMSection />
+
+      <ChapterMarker chapter="Chapter V — The Edge" title="Operational Strategy" />
       <StrategySection />
 
-      <ChapterMarker chapter="Chapter V — Risk & Mitigation" title="Stress-tested scenarios" />
+      <ChapterMarker chapter="Chapter VI — Validation" title="Business Lab Case Study" />
+      <BusinessLabSection />
+
+      <ChapterMarker chapter="Chapter VII — Security" title="Mitigation & Safeguards" />
       <RiskSection />
 
-      <ChapterMarker chapter="Chapter VI — Return Structure" title="What investors receive" />
+      <ChapterMarker chapter="Chapter VIII — Outcomes" title="Earnings & Guarantee" />
       <ReturnSection />
 
+      <FAQSection />
       <AskSection />
       <Footer />
     </main>

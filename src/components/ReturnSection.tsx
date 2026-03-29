@@ -5,6 +5,16 @@ import { motion } from 'motion/react';
 import DonutChart from './DonutChart';
 
 const ReturnSection = () => {
+    const [val, setVal] = React.useState(12000);
+
+    const getExactRate = (v: number) => {
+        if (v < 5000) return 8;
+        if (v >= 5000 && v < 10000) return 15;
+        if (v >= 10000 && v < 15000) return 20;
+        if (v >= 15000) return 25;
+        return 8;
+    };
+
     return (
         <section id="returns" className="py-24 md:py-32 bg-[var(--paper2)]">
             <div className="section-wrap">
@@ -15,45 +25,121 @@ const ReturnSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">06</span>
+                    <span className="font-mono text-[10px] text-[var(--gold)] tracking-widest uppercase mb-3 block">08</span>
                     <div className="w-10 h-0.5 bg-[var(--gold)] mb-7" />
-                    <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight mb-4">
-                        Simple, auditable,<br /><em>accountant-friendly</em>.
+                    <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] font-black leading-[1.05] tracking-tight mb-4">
+                        Structured earnings and<br /><em>contractual milestones</em>.
                     </h2>
-                    <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] leading-relaxed">
-                        A revenue share arrangement. No equity dilution. No complex cap tables. Monthly transparency, automated billing, and a clear exit point.
-                    </p>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-[1fr_320px] gap-20 items-center mt-12">
-                    <motion.div
-                        className="space-y-6"
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <p className="text-[15px] text-[#3a3830] leading-loose">
-                            The investor receives 25% of net monthly revenue — revenue after platform fees — for the first twelve months of operation. This drops to 15% from months 13 through 18.
-                        </p>
-                        <p className="text-[15px] text-[#3a3830] leading-loose">
-                            Capital return is triggered once the account reaches $50,000 in total billings. At that point, the original $10,000 is returned in full before the revenue share continues.
-                        </p>
-                        <p className="text-[15px] text-[#3a3830] leading-loose font-medium">
-                            At our target projections, the investor's share generates $2,000–$2,500 per month by month 9. Capital is fully returned within the first year. The projected 18-month total return sits between $18,000 and $24,000.
-                        </p>
-                        <p className="text-[13px] text-[var(--muted)] pt-4 border-t border-[var(--rule)]">
-                            All terms are open to discussion. These figures represent a conservative baseline model for ScaleOps.
-                        </p>
-                    </motion.div>
+                <div className="grid lg:grid-cols-[1fr_400px] gap-16 items-start mt-12">
+                    <div className="space-y-12">
+                        <motion.div
+                            className="space-y-6"
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <div className="grid grid-cols-2 gap-4">
+                                {[
+                                    { label: '8%', sub: 'Below £5K/mo' },
+                                    { label: '15%', sub: '£5K–£10K/mo' },
+                                    { label: '20%', sub: '£10K–£15K/mo' },
+                                    { label: '25%', sub: 'Above £15K/mo' },
+                                    { label: '30%', sub: 'After £15K+ sustained', span: true },
+                                ].map((tier) => (
+                                    <div key={tier.label} className={`p-4 border border-[var(--rule)] bg-white/40 ${tier.span ? 'col-span-2' : ''}`}>
+                                        <div className="font-serif text-2xl font-bold text-[var(--gold)]">{tier.label}</div>
+                                        <div className="font-mono text-[9px] text-[var(--muted)] uppercase tracking-wider">{tier.sub}</div>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-[13px] text-[var(--muted)] pt-4 border-t border-[var(--rule)]">
+                                All revenue shares are calculated from the associated contract portfolio handled by the centralized delivery team.
+                            </p>
+                        </motion.div>
+
+                        <motion.div
+                            className="p-8 border border-[var(--rule)] bg-[#fdfaf3]"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <h3 className="font-serif text-xl font-bold mb-6">Contractual Guarantee</h3>
+                            <p className="text-[14px] text-[#3a3830] leading-loose mb-6">
+                                Participants who follow the structured process receive a contractual pathway toward reaching £10K/month contract value within 3–6 months.
+                            </p>
+                            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
+                                {[
+                                    "Follow bidding workflow",
+                                    "Attend meetings",
+                                    "Maintain consistency",
+                                    "Engage with CRM",
+                                    "Build relationships",
+                                    "Review proposals"
+                                ].map(item => (
+                                    <div key={item} className="flex items-center gap-2 text-[13px] text-[var(--muted)]">
+                                        <div className="w-1 h-1 bg-[var(--gold)] rounded-full" />
+                                        {item}
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </div>
 
                     <motion.div
+                        className="rounded-[32px] border border-[var(--rule)] bg-white p-8 shadow-sm lg:sticky lg:top-32"
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <DonutChart />
+                        <div className="mb-10">
+                            <div className="font-mono text-[10px] text-[var(--muted)] uppercase tracking-wider mb-2">Earnings Projection</div>
+                            <h3 className="font-serif text-2xl font-bold">Commission Calculator</h3>
+                        </div>
+
+                        <div className="space-y-8">
+                            <div>
+                                <div className="flex justify-between mb-4">
+                                    <span className="text-[12px] uppercase font-mono tracking-widest text-[var(--muted)]">Portfolio Value</span>
+                                    <span className="font-serif text-2xl font-bold text-[var(--ink)]">£{val.toLocaleString()}</span>
+                                </div>
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="30000"
+                                    step="500"
+                                    value={val}
+                                    onChange={(e) => setVal(parseInt(e.target.value))}
+                                    className="w-full h-1 bg-[var(--rule)] rounded-lg appearance-none cursor-pointer accent-[var(--gold)]"
+                                />
+                                <div className="flex justify-between mt-2 font-mono text-[9px] text-[var(--muted)] uppercase">
+                                    <span>£0</span>
+                                    <span>£15K</span>
+                                    <span>£30K</span>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-4 pt-6 border-t border-[var(--rule)]">
+                                <div>
+                                    <div className="text-[10px] uppercase font-mono tracking-widest text-[var(--muted)] mb-1">Tier</div>
+                                    <div className="text-3xl font-serif font-bold text-[var(--gold)]">{getExactRate(val)}%</div>
+                                </div>
+                                <div>
+                                    <div className="text-[10px] uppercase font-mono tracking-widest text-[var(--muted)] mb-1">Payout</div>
+                                    <div className="text-3xl font-serif font-bold text-[var(--ink)]">£{Math.round(val * getExactRate(val) / 100).toLocaleString()}</div>
+                                </div>
+                            </div>
+
+                            <div className="p-5 bg-[var(--paper2)] border border-[var(--rule)]">
+                                <p className="text-[12px] text-[var(--muted)] leading-relaxed italic">
+                                    "£6,000 portfolio association triggers a 15% tier, resulting in £900/month in partner commission."
+                                </p>
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>

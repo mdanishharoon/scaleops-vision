@@ -20,8 +20,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ScaleOps | Private Investment Memorandum",
-  description: "A structured, 18-month plan to build a self-sustaining freelance agency.",
+  title: "Veridion Finance | Partner Track",
+  description: "Build £100,000 in accounting contract value within 9 months — without doing delivery yourself.",
 };
 
 export default function RootLayout({
