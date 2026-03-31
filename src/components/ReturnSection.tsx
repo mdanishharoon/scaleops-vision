@@ -136,7 +136,7 @@ const ReturnSection = () => {
 
                             <div className="p-4 md:p-5 bg-[var(--paper2)] border border-[var(--rule)]">
                                 <p className="text-[11px] md:text-[12px] text-[var(--muted)] leading-relaxed italic">
-                                    "£6,000 portfolio association triggers a 15% tier, resulting in £900/month in partner commission."
+                                    "£5,000 portfolio association triggers a 15% tier, resulting in £900/month in partner commission."
                                 </p>
                             </div>
                         </div>
