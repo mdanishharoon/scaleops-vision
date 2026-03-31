@@ -21,8 +21,23 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Veridion Finance | Partner Track",
-  description: "Build £100,000 in accounting contract value within 9 months — without doing delivery yourself.",
+  title: "Secure Ledger Financials | Partner Track",
+  description: "Build £100,000 in accounting contract value within 9 months, without doing delivery yourself.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
+  openGraph: {
+    title: "Secure Ledger Financials | Partner Track",
+    description: "Build £100,000 in accounting contract value within 9 months, without doing delivery yourself.",
+    type: "website",
+    siteName: "Secure Ledger Financials",
+  },
+  twitter: {
+    card: "summary",
+    title: "Secure Ledger Financials | Partner Track",
+    description: "Build £100,000 in accounting contract value within 9 months, without doing delivery yourself.",
+  },
 };
 
 export default function RootLayout({

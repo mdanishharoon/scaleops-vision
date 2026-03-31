@@ -56,7 +56,7 @@ const Navbar = () => {
                 }`}
             >
                 <Link href="/" className="font-serif italic text-sm md:text-base text-[var(--ink)] tracking-tight">
-                    Veridion
+                    Secure Ledger Financials
                 </Link>
 
                 <div className="hidden lg:flex gap-8">
@@ -129,7 +129,7 @@ const Navbar = () => {
                             Confidential · 2025
                         </div>
                         <p className="text-[12px] text-[var(--muted)] leading-relaxed">
-                            Veridion Finance Partner Track
+                            Secure Ledger Financials Partner Track
                         </p>
                     </div>
                 </nav>

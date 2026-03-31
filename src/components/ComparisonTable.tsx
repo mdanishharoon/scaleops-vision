@@ -27,7 +27,7 @@ const ComparisonTable = () => {
                         A model designed for <em className="italic text-[var(--gold)] not-italic serif-italic">leverage</em>.
                     </h2>
                     <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] mx-auto leading-relaxed">
-                        Comparing traditional career paths against the Veridion Finance partner track structure.
+                        Comparing traditional career paths against the Secure Ledger Financials partner track structure.
                     </p>
                 </motion.div>
 

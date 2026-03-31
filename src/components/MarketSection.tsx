@@ -46,7 +46,7 @@ const MarketSection = () => {
                             This program follows the same model. You operate as the relationship owner. Our team supports proposal writing, positioning, bidding strategy, and delivery execution behind you.
                         </p>
                         <p className="text-[15px] text-[#3a3830] leading-relaxed font-medium">
-                            Veridion Finance builds that advantage: you build relationship ownership and portfolio association, while we handle the operational weight of delivery.
+                            Secure Ledger Financials builds that advantage: you build relationship ownership and portfolio association, while we handle the operational weight of delivery.
                         </p>
 
                         <div className="pt-6 md:pt-8 border-t border-[var(--rule)]">

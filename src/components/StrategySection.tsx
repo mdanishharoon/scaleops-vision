@@ -5,10 +5,10 @@ import { motion } from 'motion/react';
 
 const StrategySection = () => {
     const points = [
-        { num: '01', tag: 'Proposals', title: 'The first two lines win the contract.', body: "Every proposal leads with the client's exact pain point — not a generic introduction. Response rates for this approach average three to five times the platform norm. The scripts are already written. They get deployed and refined with every submission." },
-        { num: '02', tag: 'Selection', title: "We don't bid on everything. We bid on the right things.", body: "The target is high-budget, low-competition postings in finance, SaaS, and e-commerce — verticals with the highest lifetime value. We pass on low-margin gigs entirely, even when volume seems tempting in the early months." },
-        { num: '03', tag: 'Retention', title: 'Every project is a retainer in disguise.', body: 'One-off contracts are onboarding tools. Success leads to a structured monthly retainer offer. One retained client at $4K per month is worth more than four one-off $1K projects — and it compounds reputation every month.' },
-        { num: '04', tag: 'Scale', title: 'At $100K, we leave the platform behind.', body: 'The $100K milestone unlocks elite status and direct credibility with enterprise buyers. The endgame is a direct-contract agency operating with zero platform overhead. The platform is the launchpad — not the destination.' },
+        { num: '01', tag: 'Proposals', title: 'The first two lines win the contract.', body: "Every proposal leads with the client's exact pain point, not a generic introduction. Response rates for this approach average three to five times the platform norm. The scripts are already written. They get deployed and refined with every submission." },
+        { num: '02', tag: 'Selection', title: "We don't bid on everything. We bid on the right things.", body: "The target is high-budget, low-competition postings in finance, SaaS, and e-commerce: verticals with the highest lifetime value. We pass on low-margin gigs entirely, even when volume seems tempting in the early months." },
+        { num: '03', tag: 'Retention', title: 'Every project is a retainer in disguise.', body: 'One-off contracts are onboarding tools. Success leads to a structured monthly retainer offer. One retained client at $4K per month is worth more than four one-off $1K projects, and it compounds reputation every month.' },
+        { num: '04', tag: 'Scale', title: 'At $100K, we leave the platform behind.', body: 'The $100K milestone unlocks elite status and direct credibility with enterprise buyers. The endgame is a direct-contract agency operating with zero platform overhead. The platform is the launchpad, not the destination.' },
     ];
 
     return (
@@ -41,7 +41,7 @@ const StrategySection = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: idx * 0.1 }}
                         >
-                            <div className="font-serif text-4xl md:text-6xl font-black text-[var(--paper)] leading-none select-none">
+                            <div className="font-serif text-4xl md:text-6xl font-black text-[var(--gold)]/30 leading-none select-none">
                                 {point.num}
                             </div>
                             <div className="max-w-[620px]">

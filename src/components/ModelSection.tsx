@@ -26,7 +26,7 @@ const ModelSection = () => {
                         What you build in<br />a <em>9-month horizon</em>.
                     </h2>
                     <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] leading-relaxed">
-                        The partner track is built on a clear timeline of asset creation. You don't just "freelance" — you build a portfolio of recurring contract value.
+                        The partner track is built on a clear timeline of asset creation. You don't just "freelance." You build a portfolio of recurring contract value.
                     </p>
                 </motion.div>
 

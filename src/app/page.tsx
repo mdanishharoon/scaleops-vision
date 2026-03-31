@@ -26,14 +26,14 @@ export default function Home() {
         </p>
       </div>
 
-      <ChapterMarker chapter="Chapter I — The Position" title="Partner Track vs Freelancing" />
+      <ChapterMarker chapter="Chapter I: The Position" title="Partner Track vs Freelancing" />
       <MarketSection />
       <ComparisonTable />
 
-      <ChapterMarker chapter="Chapter II — The Build" title="9-Month Growth Horizon" />
+      <ChapterMarker chapter="Chapter II: The Build" title="9-Month Growth Horizon" />
       <ModelSection />
 
-      <ChapterMarker chapter="Chapter III — The Roadmap" title="Phase 1, 2, and 3" />
+      <ChapterMarker chapter="Chapter III: The Roadmap" title="Phase 1, 2, and 3" />
       <GrowthArcSection />
 
       <div className="pull-stripe bg-[#f3ede0]">
@@ -42,19 +42,19 @@ export default function Home() {
         </p>
       </div>
 
-      <ChapterMarker chapter="Chapter IV — The Systems" title="Internal CRM Infrastructure" />
+      <ChapterMarker chapter="Chapter IV: The Systems" title="Internal CRM Infrastructure" />
       <CRMSection />
 
-      <ChapterMarker chapter="Chapter V — The Edge" title="Operational Strategy" />
+      <ChapterMarker chapter="Chapter V: The Edge" title="Operational Strategy" />
       <StrategySection />
 
-      <ChapterMarker chapter="Chapter VI — Validation" title="Business Lab Case Study" />
+      <ChapterMarker chapter="Chapter VI: Validation" title="Business Lab Case Study" />
       <BusinessLabSection />
 
-      <ChapterMarker chapter="Chapter VII — Security" title="Mitigation & Safeguards" />
+      <ChapterMarker chapter="Chapter VII: Security" title="Mitigation & Safeguards" />
       <RiskSection />
 
-      <ChapterMarker chapter="Chapter VIII — Outcomes" title="Earnings & Guarantee" />
+      <ChapterMarker chapter="Chapter VIII: Outcomes" title="Earnings & Guarantee" />
       <ReturnSection />
 
       <FAQSection />

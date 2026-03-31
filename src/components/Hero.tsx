@@ -40,7 +40,7 @@ const Hero = () => {
                         className="font-mono text-[10px] text-[var(--gold-light)] tracking-[0.3em] uppercase mb-12 flex items-center gap-5"
                     >
                         <span className="w-12 h-px bg-gradient-to-r from-[var(--gold-light)]/0 to-[var(--gold-light)]/60" />
-                        Veridion Finance Partner Track · 2025
+                        Secure Ledger Financials · Partner Track · 2025
                     </motion.div>
 
                     <motion.h1 
@@ -50,7 +50,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="font-serif text-[clamp(2.75rem,6.5vw,5.25rem)] font-black leading-[1.02] tracking-tight mb-10"
                     >
-                        Build <span className="text-[var(--gold-light)]">£100K</span> in contract value within 9 months — without doing delivery yourself.
+                        Build <span className="text-[var(--gold-light)]">£100K</span> in contract value within 9 months, without doing delivery yourself.
                     </motion.h1>
 
                     <motion.p 

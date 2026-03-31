@@ -29,7 +29,7 @@ const AskSection = () => {
                     </p>
 
                     <a
-                        href="mailto:partners@veridionfinance.com"
+                        href="mailto:partners@secureledgerfinancials.com"
                         className="inline-flex items-center gap-3 border border-[var(--gold-light)]/55 text-[var(--gold-light)] font-mono text-[11px] tracking-[0.15em] uppercase py-4 px-10 hover:bg-[var(--gold)] hover:text-[var(--ink)] hover:border-[var(--gold)] transition-all duration-300"
                     >
                         Start Application <ArrowRight size={14} />

@@ -28,7 +28,7 @@ const GrowthArcSection = () => {
                         From first contract<br />to <em>agency status</em>.
                     </h2>
                     <p className="text-base md:text-lg text-[var(--muted)] max-w-[580px] leading-relaxed">
-                        The model does not rely on a single breakout month. It is built on deliberate compounding — each retainer locked in makes the next one easier to secure.
+                        The model does not rely on a single breakout month. It is built on deliberate compounding: each retainer locked in makes the next one easier to secure.
                     </p>
                 </motion.div>
 

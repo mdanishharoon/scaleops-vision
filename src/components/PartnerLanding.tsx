@@ -51,7 +51,7 @@ const faq = [
   { q: "Do I need an existing Upwork account?", a: "No. New profiles are supported and positioned from the start." },
   { q: "Do I need to perform delivery work?", a: "No. Delivery is handled by the operations team while you own the relationship." },
   { q: "Is 10K per month guaranteed?", a: "The guarantee is contractual when the required bidding, meeting, and CRM steps are followed consistently." },
-  { q: "Do I keep client relationships?", a: "Yes. The model is built around relationship ownership inside the VeridionFinance ecosystem." },
+  { q: "Do I keep client relationships?", a: "Yes. The model is built around relationship ownership inside the Secure Ledger Financials ecosystem." },
   { q: "How long before direct clients?", a: "Typically within month 6 to month 9 once the first platform proof points are established." },
   { q: "What services are included?", a: "Bookkeeping, tax, management accounts, financial modeling, outsourced CFO services, corporate finance, and compliance support." },
 ];
@@ -102,7 +102,7 @@ export default function PartnerLanding() {
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-[var(--rule)] bg-white/70 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--accent)]">
                 <span className="h-2 w-2 rounded-full bg-[var(--gold)]" />
-                VeridionFinance partner track
+                Secure Ledger Financials partner track
               </div>
               <h1 className="max-w-[10ch] font-serif text-[clamp(3rem,7vw,6.2rem)] font-black leading-[0.94] tracking-tight text-[var(--ink)]">
                 Build 100K in accounting contract value within 9 months.
@@ -140,7 +140,7 @@ export default function PartnerLanding() {
                 <div className="mb-5 flex items-center justify-between">
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--gold-light)]/70">9-month portfolio arc</div>
-                    <div className="mt-2 font-serif text-2xl font-bold">VeridionFinance growth path</div>
+                    <div className="mt-2 font-serif text-2xl font-bold">Secure Ledger Financials growth path</div>
                   </div>
                   <ChartColumnBig className="text-[var(--gold-light)]" size={20} />
                 </div>
@@ -223,7 +223,7 @@ export default function PartnerLanding() {
                 Relationship ownership first. Delivery handled centrally.
               </h2>
               <p className="mt-5 text-[15px] leading-loose text-[#423d32]">
-                Most accounting professionals support someone else&apos;s portfolio, bill hourly, and stay behind the scenes. VeridionFinance is structured more like a firm partner track: you originate relationships, grow contract value, and operate with a delivery team behind you.
+                Most accounting professionals support someone else&apos;s portfolio, bill hourly, and stay behind the scenes. Secure Ledger Financials is structured more like a firm partner track: you originate relationships, grow contract value, and operate with a delivery team behind you.
               </p>
             </div>
 
@@ -489,7 +489,7 @@ export default function PartnerLanding() {
                 ))}
               </div>
               <p className="mt-5 text-sm leading-loose text-white/72">
-                Several participants crossed the 10K per month threshold during testing. That repeatability became the basis of the public VeridionFinance partner-track rollout.
+                Several participants crossed the 10K per month threshold during testing. That repeatability became the basis of the public Secure Ledger Financials partner-track rollout.
               </p>
             </div>
           </div>
@@ -664,7 +664,7 @@ export default function PartnerLanding() {
             <div>
               <div className="section-kicker !text-[var(--gold-light)]/78">Apply for the next partner intake</div>
               <h2 className="mt-4 font-serif text-[clamp(2.2rem,5vw,4rem)] font-black leading-[0.98] tracking-tight">
-                VeridionFinance is recruiting operators, not observers.
+                Secure Ledger Financials is recruiting operators, not observers.
               </h2>
               <p className="mt-5 max-w-[50ch] text-[15px] leading-loose text-white/70">
                 Applicants should be commercially motivated, relationship-oriented, based in target regions, and able to commit 1 to 4 hours daily. Applications close when capacity is reached.
@@ -701,11 +701,11 @@ export default function PartnerLanding() {
                 ))}
               </div>
               <div className="mt-4 rounded-[18px] border border-white/10 bg-black/10 px-4 py-4">
-                <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/45">Why VeridionFinance?</div>
+                <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-white/45">Why Secure Ledger Financials?</div>
                 <div className="mt-4 text-sm text-white/72">Long-form application response field placeholder</div>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-4">
-                <a href="mailto:partners@veridionfinance.com" className="inline-flex items-center gap-2 rounded-full bg-[var(--gold)] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.15em] text-[var(--ink)]">
+                <a href="mailto:partners@secureledgerfinancials.com" className="inline-flex items-center gap-2 rounded-full bg-[var(--gold)] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.15em] text-[var(--ink)]">
                   Start application <ArrowRight size={14} />
                 </a>
                 <div className="flex items-center gap-2 text-sm text-white/66">
