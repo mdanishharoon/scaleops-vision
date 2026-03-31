@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Secure Ledger Financials",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Secure Ledger Financials | Partner Track",
     description: "Build £100,000 in accounting contract value within 9 months, without doing delivery yourself.",
   },
