@@ -25,7 +25,7 @@ const AskSection = () => {
                     </h2>
 
                     <p className="text-base md:text-lg text-[#faf8f3]/50 max-w-[480px] mx-auto leading-relaxed mb-14">
-                        We are recruiting operators, not observers. Participation requires a £2,000 commitment and 1–4 hours of daily relationship management.
+                        We are recruiting operators, not observers. Participation requires a £4,000 commitment and 1–4 hours of daily relationship management.
                     </p>
 
                     <a
@@ -36,7 +36,7 @@ const AskSection = () => {
                     </a>
 
                     <p className="font-mono text-[9px] text-[#faf8f3]/20 tracking-wider mt-12">
-                        Applications reviewed before onboarding · Minimum commitment £2,000 · Confidential rollout
+                        Applications reviewed before onboarding · Minimum commitment £4,000 · Confidential rollout
                     </p>
                 </motion.div>
             </div>

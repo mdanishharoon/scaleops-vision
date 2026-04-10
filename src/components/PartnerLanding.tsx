@@ -113,7 +113,7 @@ export default function PartnerLanding() {
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                 {[
-                  { label: "Minimum commitment", value: "2,000 GBP" },
+                  { label: "Minimum commitment", value: "4,000 GBP" },
                   { label: "Daily time", value: "1-4 hours" },
                   { label: "Target regions", value: "UK / US / AU / ME" },
                   { label: "Delivery model", value: "Ops team handled" },
@@ -284,7 +284,7 @@ export default function PartnerLanding() {
               <div className="mt-4 space-y-5">
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">Onboarding</div>
-                  <div className="mt-1 text-3xl font-semibold text-[var(--ink)]">2,000 GBP</div>
+                  <div className="mt-1 text-3xl font-semibold text-[var(--ink)]">4,000 GBP</div>
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">Time required</div>
@@ -710,7 +710,7 @@ export default function PartnerLanding() {
                 </a>
                 <div className="flex items-center gap-2 text-sm text-white/66">
                   <Handshake size={16} className="text-[var(--gold-light)]" />
-                  Minimum onboarding commitment: 2,000 GBP
+                  Minimum onboarding commitment: 4,000 GBP
                 </div>
               </div>
             </div>

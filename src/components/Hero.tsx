@@ -32,7 +32,7 @@ const Hero = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -43,7 +43,7 @@ const Hero = () => {
                         Secure Ledger Financials · Partner Track · 2025
                     </motion.div>
 
-                    <motion.h1 
+                    <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -53,7 +53,7 @@ const Hero = () => {
                         Build <span className="text-[var(--gold-light)]">£100K</span> in contract value within 9 months, without doing delivery yourself.
                     </motion.h1>
 
-                    <motion.p 
+                    <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -63,7 +63,7 @@ const Hero = () => {
                         Structured partner track for finance professionals. UK, US, Australia, Middle East.
                     </motion.p>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -71,7 +71,7 @@ const Hero = () => {
                         className="flex flex-wrap items-center gap-y-8 gap-x-12 pt-10 border-t border-white/[0.08]"
                     >
                         {[
-                            { label: 'Commitment', val: '£2,000' },
+                            { label: 'Commitment', val: '£4,000' },
                             { label: 'Time Required', val: '1–4 hours / day' },
                             { label: 'Structure', val: 'Partner Track' },
                             { label: 'Target Portfolio', val: '£100K / 9 months' },
